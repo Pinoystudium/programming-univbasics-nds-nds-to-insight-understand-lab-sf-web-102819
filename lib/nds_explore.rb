@@ -8,10 +8,11 @@ def pretty_print_nds(nds)
   pp nds 
 end
 
+
 def print_first_directors_movie_titles
+  justSpielberg = directors_database[0][:movies]
   binding.pry
   column_index = 0
-  if directors_database[0][:name] =="Stephen Spielberg"
       while column_index < directors_database.select{|k,v|k == :title}.count do
             puts "#{directors_database[0][:movie][0][:title]}\n"
             column_index+= 1
