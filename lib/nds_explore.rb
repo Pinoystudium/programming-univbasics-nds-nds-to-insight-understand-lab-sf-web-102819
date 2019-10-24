@@ -11,13 +11,10 @@ end
 
 def print_first_directors_movie_titles
   justSpielberg = directors_database[0][:movies]
-  binding.pry
   column_index = 0
       while column_index < justSpielberg.length do
-            
-            puts "#{justSpielberg[:title]}\n"
-            
+            puts "#{justSpielberg[column_index][:title]}\n"
+            column_index += 1
       end
-    end
 end
 
