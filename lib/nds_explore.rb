@@ -14,7 +14,7 @@ def print_first_directors_movie_titles
   binding.pry
   column_index = 0
       while column_index < justSpielberg.length do
-            column_index+= 1
+            
             puts "#{justSpielberg[:title]}\n"
             
       end
