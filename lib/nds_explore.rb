@@ -9,7 +9,7 @@ end
 
 def print_first_directors_movie_titles
   column_index = 0
-  if directors_database[:name] =="Stephen Spielberg"
+  if directors_database[0][:name] =="Stephen Spielberg"
       while column_index < directors_database[:movie][:title].length do
             puts "#{directors_database[:movie][:title]}\n"
             column_index+= 1
