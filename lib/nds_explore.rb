@@ -8,5 +8,8 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-directors_database[:movie][:title]
+  column_index = 0
+  if directors_database[:movie] =="Stephen Spielberg"
+      while column_index < directors_database[:movie][:title].length do
+            puts "#{"
 end
